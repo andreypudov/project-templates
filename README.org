@@ -1,0 +1,15 @@
+#+title: Project Templates
+#+author: Andrey Pudov
+#+date: <2026-08-25 Tue>
+
+This repository provides small, reusable project templates for getting
+started quickly with common development setups.
+
+* Available Templates
+
+| Template                                                    | Description                         |
+|-------------------------------------------------------------+-------------------------------------|
+| [[file:c-make-basic/README.org][c-make-basic]] | Basic C project using Make and Clang |
+
+Each template is self-contained and includes the files needed to build and
+run a minimal example. Open its setup guide for template-specific steps.

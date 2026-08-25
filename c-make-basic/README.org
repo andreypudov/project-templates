@@ -1,0 +1,27 @@
+#+title: C Make Basic
+#+author: Andrey Pudov
+#+date: <2026-08-25 Tue>
+
+A small C project template using Make and Clang.
+
+* Build
+
+#+begin_src sh
+make
+#+end_src
+
+The executable is created at =out/program_name=.
+
+* Run
+
+#+begin_src sh
+./out/program_name 1 2 3
+#+end_src
+
+This prints the sum of the provided integer arguments.
+
+* Clean
+
+#+begin_src sh
+make clean
+#+end_src
