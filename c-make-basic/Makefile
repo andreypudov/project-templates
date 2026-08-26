@@ -1,6 +1,6 @@
 # compiler and flags
 CC      = clang
-CFLAGS  = -Wall -Wextra -g
+CFLAGS  = -std=c23 -g -Wall -Wextra -Wpedantic -Werror
 LDFLAGS =
 
 # configurable output directory
