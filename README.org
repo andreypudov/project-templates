@@ -7,9 +7,10 @@ started quickly with common development setups.
 
 * Available Templates
 
-| Template                                                    | Description                         |
-|-------------------------------------------------------------+-------------------------------------|
-| [[file:c-make-basic/README.org][c-make-basic]] | Basic C project using Make and Clang |
+| Template       | Description                              |
+|----------------+------------------------------------------|
+| [[file:c-make-basic/README.org][c-make-basic]]   | Basic C project using Make and Clang     |
+| [[file:cpp-make-basic/README.org][cpp-make-basic]] | Basic C++ project using Make and Clang++ |
 
 Each template is self-contained and includes the files needed to build and
 run a minimal example. Open its setup guide for template-specific steps.

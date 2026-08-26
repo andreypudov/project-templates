@@ -1,8 +1,8 @@
-#+title: C Make Basic
+#+title: C++ Make Basic
 #+author: Andrey Pudov
-#+date: <2026-08-25 Tue>
+#+date: <2026-08-26 Wed>
 
-A small C project template using Make and Clang.
+A small C++ project template using Make and Clang++.
 
 * Build
 

@@ -4,14 +4,14 @@ CFLAGS  = -Wall -Wextra -g
 LDFLAGS =
 
 # configurable output directory
-OUTDIR = out
+OUTDIR = build
 
 # source discovery
 SOURCES = $(shell find . -name '*.c' | sort)
 OBJECTS = $(patsubst %.c, $(OUTDIR)/%.o, $(SOURCES))
 
 # executable name
-EXECUTABLE = program_name
+EXECUTABLE = program
 
 
 # default target
