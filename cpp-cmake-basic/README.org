@@ -1,13 +1,14 @@
-#+title: C Make Basic
+#+title: C++ CMake Basic
 #+author: Andrey Pudov
-#+date: <2026-08-25 Tue>
+#+date: <2026-08-31 Mon>
 
-A small C project template using Make and Clang.
+A small C++ project template using CMake and Clang++.
 
 * Build
 
 #+begin_src sh
-make
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
 #+end_src
 
 The executable is created at =build/program=.
@@ -23,5 +24,5 @@ This prints the sum of the provided integer arguments.
 * Clean
 
 #+begin_src sh
-make clean
+cmake --build build --target clean
 #+end_src
