@@ -1,0 +1,9 @@
+add_executable(calclib_test calclib_test.cc)
+target_link_libraries(calclib_test PRIVATE calclib GTest::gtest_main)
+enable_strict_warnings(calclib_test)
+gtest_discover_tests(calclib_test)
+
+add_executable(program_test program_test.cc)
+target_link_libraries(program_test PRIVATE program_core GTest::gtest_main)
+enable_strict_warnings(program_test)
+gtest_discover_tests(program_test)

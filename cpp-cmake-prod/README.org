@@ -1,0 +1,41 @@
+#+title: C++ CMake Production
+#+author: Andrey Pudov
+#+date: <2026-08-31 Mon>
+
+A C++ project template using CMake, with an executable, a library, and tests.
+
+* Layout
+
+- =include/= contains public headers for the program and library.
+- =src/= contains implementation files and private headers.
+- =tests/= contains GoogleTest suites for the program and library.
+- Each component owns a dedicated =CMakeLists.txt= file.
+
+* Build
+
+#+begin_src sh
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+#+end_src
+
+The executable is created at =build/program=.
+
+* Test
+
+#+begin_src sh
+ctest --test-dir build --output-on-failure
+#+end_src
+
+* Run
+
+#+begin_src sh
+./build/program 1 2 3
+#+end_src
+
+This prints the sum of the provided integer arguments.
+
+* Clean
+
+#+begin_src sh
+cmake --build build --target clean
+#+end_src
