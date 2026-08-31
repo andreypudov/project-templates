@@ -1,8 +1,8 @@
+#include <charconv>
 #include <iostream>
 #include <string_view>
-#include <charconv>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
   int sum = 0;
 
   for (int index = 1; index < argc; ++index) {

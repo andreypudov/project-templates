@@ -9,10 +9,8 @@
 
 namespace program {
 
-int run(
-    std::span<const std::string_view> arguments,
-    std::ostream& output,
-    std::ostream& error) {
+int run(std::span<const std::string_view> arguments, std::ostream &output,
+        std::ostream &error) {
   std::vector<int> values;
   values.reserve(arguments.size());
 
@@ -31,13 +29,12 @@ int run(
   return 0;
 }
 
-}  // namespace program
-
-namespace program::detail {
+namespace detail {
 
 std::optional<int> parse_integer(std::string_view text) {
   int value{};
-  const auto result = std::from_chars(text.data(), text.data() + text.size(), value);
+  const auto result =
+      std::from_chars(text.data(), text.data() + text.size(), value);
 
   if (result.ec != std::errc{} || result.ptr != text.data() + text.size()) {
     return std::nullopt;
@@ -46,4 +43,6 @@ std::optional<int> parse_integer(std::string_view text) {
   return value;
 }
 
-}  // namespace program::detail
+} // namespace detail
+
+} // namespace program

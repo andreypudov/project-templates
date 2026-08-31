@@ -12,6 +12,24 @@ function(enable_strict_warnings target)
   endif()
 endfunction()
 
+find_program(CLANG_FORMAT_EXECUTABLE NAMES clang-format)
+if(CLANG_FORMAT_EXECUTABLE)
+  file(GLOB_RECURSE FORMAT_SOURCES CONFIGURE_DEPENDS
+    "${PROJECT_SOURCE_DIR}/include/*.h"
+    "${PROJECT_SOURCE_DIR}/src/*.cc"
+    "${PROJECT_SOURCE_DIR}/src/*.h"
+    "${PROJECT_SOURCE_DIR}/tests/*.cc"
+  )
+  add_custom_target(format
+    COMMAND "${CLANG_FORMAT_EXECUTABLE}" -i ${FORMAT_SOURCES}
+    WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
+    COMMENT "Formatting C++ source files"
+    VERBATIM
+  )
+else()
+  message(STATUS "clang-format was not found; the format target is unavailable")
+endif()
+
 add_subdirectory(src/calclib)
 add_subdirectory(src/program)
 
