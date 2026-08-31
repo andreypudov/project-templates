@@ -1,5 +1,5 @@
-#include "program/application.h"
-#include "program/internal/application.h"
+#include "program/command.h"
+#include "program/internal/command.h"
 
 #include "calclib/calclib.h"
 

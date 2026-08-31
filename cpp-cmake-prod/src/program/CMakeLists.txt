@@ -1,4 +1,4 @@
-add_library(program_core STATIC application.cc)
+add_library(program_core STATIC command.cc)
 
 target_include_directories(program_core
   PUBLIC "${PROJECT_SOURCE_DIR}/include"

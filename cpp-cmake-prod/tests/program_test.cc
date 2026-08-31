@@ -1,4 +1,4 @@
-#include "program/application.h"
+#include "program/command.h"
 
 #include <gtest/gtest.h>
 
