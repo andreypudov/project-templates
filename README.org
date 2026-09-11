@@ -12,7 +12,8 @@ started quickly with common development setups.
 | [[file:c-make-basic/README.org][c-make-basic]]    | Basic C project using Make and Clang      |
 | [[file:cpp-make-basic/README.org][cpp-make-basic]]  | Basic C++ project using Make and Clang++  |
 | [[file:cpp-cmake-basic/README.org][cpp-cmake-basic]] | Basic C++ project using CMake and Clang++ |
-| [[file:cpp-cmake-prod/README.org][cpp-cmake-prod]] | Production C++ project using CMake        |
+| [[file:cpp-cmake-prod/README.org][cpp-cmake-prod]]  | Production C++ project using CMake        |
+| [[file:ts-node-basic/README.org][ts-node-basic]]   | Basic TypeScript project using Node       |
 
 Each template is self-contained and includes the files needed to build and
 run a minimal example. Open its setup guide for template-specific steps.

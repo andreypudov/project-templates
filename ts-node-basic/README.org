@@ -1,0 +1,36 @@
+#+title: TypeScript Node Basic
+#+author: Andrey Pudov
+#+date: <2026-09-11 Fri>
+
+A small TypeScript project template using Node.js and the TypeScript compiler.
+
+* Build
+
+#+begin_src sh
+npm install
+npm run build
+#+end_src
+
+The compiled JavaScript is created at =dist/index.js=.
+
+* Run
+
+#+begin_src sh
+node dist/index.js 1 2 3
+#+end_src
+
+This prints the sum of the provided integer arguments.
+
+* Check
+
+#+begin_src sh
+npm run check
+#+end_src
+
+Type-checks the source without emitting files.
+
+* Clean
+
+#+begin_src sh
+rm -rf dist node_modules
+#+end_src
